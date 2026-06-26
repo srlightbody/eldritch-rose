@@ -60,8 +60,7 @@ Builds on `rose-pine/neovim` (required dependency). With lazy.nvim:
 
 ```lua
 {
-	dir = "~/Projects/eldritch-rose/nvim",
-	name = "eldritch-rose",
+	"srlightbody/eldritch-rose",
 	dependencies = { "rose-pine/neovim" },
 	config = function()
 		vim.cmd("colorscheme eldritch-rose")
