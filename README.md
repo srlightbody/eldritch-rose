@@ -104,6 +104,19 @@ source-file ~/.config/tmux/eldritch-rose.conf
 
 Reload with `tmux source-file ~/.config/tmux/tmux.conf`.
 
+### VS Code
+
+Until it's on the marketplace, install it as a local extension by symlinking the
+`vscode/` folder into your extensions dir:
+
+```sh
+git clone https://github.com/srlightbody/eldritch-rose ~/.eldritch-rose
+ln -s ~/.eldritch-rose/vscode ~/.vscode/extensions/eldritch-rose
+```
+
+Reload the window, then `Ctrl+Shift+P` (`Cmd+Shift+P` on macOS) → "Preferences:
+Color Theme" → Eldritch Rose.
+
 ## Notes
 
 - The neovim theme is standalone: it vendors and adapts rose-pine/neovim's

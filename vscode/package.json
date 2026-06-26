@@ -1,0 +1,25 @@
+{
+	"name": "eldritch-rose",
+	"displayName": "Eldritch Rose",
+	"description": "Rosé Pine backgrounds with Eldritch accents.",
+	"version": "0.1.0",
+	"publisher": "srlightbody",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.70.0"
+	},
+	"categories": ["Themes"],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/srlightbody/eldritch-rose.git"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Eldritch Rose",
+				"uiTheme": "vs-dark",
+				"path": "./themes/eldritch-rose-color-theme.json"
+			}
+		]
+	}
+}
