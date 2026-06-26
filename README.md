@@ -8,9 +8,9 @@ and neon-green cursor. Dark, low-contrast base; the blues, cyans, and purples po
 
 | Role            | Hex       | Source     |
 |-----------------|-----------|------------|
-| base (bg)       | `#191724` | rose pine  |
-| surface         | `#1f1d2e` | rose pine  |
-| overlay         | `#26233a` | rose pine  |
+| base (bg)       | `#0e0218` | violet     |
+| surface         | `#17112b` | violet     |
+| overlay         | `#241a38` | violet     |
 | muted           | `#6e6a86` | rose pine  |
 | subtle          | `#908caa` | rose pine  |
 | text (fg)       | `#ebfafa` | eldritch   |
@@ -208,6 +208,16 @@ k9s:
 ```sh
 curl -fsSL https://raw.githubusercontent.com/srlightbody/eldritch-rose/main/lsd/eldritch-rose.yaml \
 	-o ~/.config/lsd/colors.yaml
+```
+
+### Noctalia
+
+Drop the colorscheme directory into noctalia's colorschemes folder, then pick it
+in noctalia's settings (noctalia generates the per-terminal files itself):
+
+```sh
+mkdir -p ~/.config/noctalia/colorschemes
+cp -r "noctalia/colorschemes/Eldritch Rose" ~/.config/noctalia/colorschemes/
 ```
 
 ## Notes

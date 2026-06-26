@@ -1,9 +1,9 @@
 -- Eldritch Rose palette: rose-pine structure, eldritch accents.
 return {
-	base = "#191724",
-	surface = "#1f1d2e",
-	overlay = "#26233a",
-	_nc = "#16141f",
+	base = "#0e0218",
+	surface = "#17112b",
+	overlay = "#241a38",
+	_nc = "#0a0214",
 
 	muted = "#6e6a86",
 	subtle = "#908caa",

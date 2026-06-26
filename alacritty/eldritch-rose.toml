@@ -2,11 +2,11 @@
 # rose-pine backgrounds, eldritch accents
 
 [colors.primary]
-background = "#191724"
+background = "#0e0218"
 foreground = "#ebfafa"
 
 [colors.cursor]
-text   = "#191724"
+text   = "#0e0218"
 cursor = "#37f499"
 
 [colors.selection]
