@@ -28,7 +28,9 @@ function M.load()
 		},
 	})
 
-	vim.cmd("colorscheme rose-pine-main")
+	-- call rose-pine's apply fn directly; a nested :colorscheme is a no-op
+	-- when invoked from inside our own colors/ file
+	rose.colorscheme("main")
 	vim.g.colors_name = "eldritch-rose"
 end
 
