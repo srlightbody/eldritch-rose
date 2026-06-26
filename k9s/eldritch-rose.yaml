@@ -1,0 +1,86 @@
+# Eldritch Rose - k9s skin
+# place in ~/.config/k9s/skins/eldritch-rose.yaml, then set in config.yaml:
+#   k9s:
+#     ui:
+#       skin: eldritch-rose
+
+k9s:
+  body:
+    fgColor: "#ebfafa"
+    bgColor: "#191724"
+    logoColor: "#04d1f9"
+  prompt:
+    fgColor: "#ebfafa"
+    bgColor: "#191724"
+    suggestColor: "#a48cf2"
+  info:
+    fgColor: "#04d1f9"
+    sectionColor: "#ebfafa"
+  dialog:
+    fgColor: "#ebfafa"
+    bgColor: "#191724"
+    buttonFgColor: "#191724"
+    buttonBgColor: "#04d1f9"
+    buttonFocusFgColor: "#191724"
+    buttonFocusBgColor: "#37f499"
+    labelFgColor: "#f6c177"
+    fieldFgColor: "#ebfafa"
+  frame:
+    border:
+      fgColor: "#26233a"
+      focusColor: "#04d1f9"
+    menu:
+      fgColor: "#ebfafa"
+      keyColor: "#a48cf2"
+      numKeyColor: "#a48cf2"
+    crumbs:
+      fgColor: "#191724"
+      bgColor: "#403d52"
+      activeColor: "#04d1f9"
+    status:
+      newColor: "#04d1f9"
+      modifyColor: "#4d8bff"
+      addColor: "#37f499"
+      errorColor: "#eb6f92"
+      highlightColor: "#f6c177"
+      killColor: "#a48cf2"
+      completedColor: "#6e6a86"
+    title:
+      fgColor: "#ebfafa"
+      bgColor: "#191724"
+      highlightColor: "#f6c177"
+      counterColor: "#a48cf2"
+      filterColor: "#04d1f9"
+  views:
+    charts:
+      bgColor: "#191724"
+      defaultDialColors:
+        - "#04d1f9"
+        - "#eb6f92"
+      defaultChartColors:
+        - "#04d1f9"
+        - "#eb6f92"
+    table:
+      fgColor: "#ebfafa"
+      bgColor: "#191724"
+      cursorFgColor: "#191724"
+      cursorBgColor: "#26233a"
+      header:
+        fgColor: "#ebfafa"
+        bgColor: "#191724"
+        sorterColor: "#37f499"
+    xray:
+      fgColor: "#ebfafa"
+      bgColor: "#191724"
+      cursorColor: "#26233a"
+      graphicColor: "#04d1f9"
+    yaml:
+      keyColor: "#4d8bff"
+      colonColor: "#908caa"
+      valueColor: "#ebfafa"
+    logs:
+      fgColor: "#ebfafa"
+      bgColor: "#191724"
+      indicator:
+        fgColor: "#04d1f9"
+        bgColor: "#191724"

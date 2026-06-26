@@ -1,0 +1,31 @@
+# Eldritch Rose - lazygit
+# merge into ~/.config/lazygit/config.yml
+
+gui:
+  theme:
+    activeBorderColor:
+      - "#04d1f9"
+      - bold
+    inactiveBorderColor:
+      - "#6e6a86"
+    searchingActiveBorderColor:
+      - "#f6c177"
+      - bold
+    optionsTextColor:
+      - "#4d8bff"
+    selectedLineBgColor:
+      - "#26233a"
+    cherryPickedCommitFgColor:
+      - "#04d1f9"
+    cherryPickedCommitBgColor:
+      - "#403d52"
+    markedBaseCommitFgColor:
+      - "#f6c177"
+    markedBaseCommitBgColor:
+      - "#403d52"
+    unstagedChangesColor:
+      - "#eb6f92"
+    defaultFgColor:
+      - "#ebfafa"
+  authorColors:
+    "*": "#a48cf2"

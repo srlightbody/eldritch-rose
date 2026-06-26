@@ -1,0 +1,28 @@
+# Eldritch Rose - delta
+# include from ~/.gitconfig:
+#   [include]
+#       path = ~/.config/delta/eldritch-rose.gitconfig
+# syntax-theme expects bat's "Eldritch Rose" tmTheme on the bat themes path.
+
+[delta]
+	syntax-theme = Eldritch Rose
+	line-numbers = true
+
+	minus-style = syntax "#3a1f2a"
+	minus-emph-style = syntax "#5a2535"
+	plus-style = syntax "#16302a"
+	plus-emph-style = syntax "#1d4a3e"
+
+	line-numbers-minus-style = "#eb6f92"
+	line-numbers-plus-style = "#37f499"
+	line-numbers-zero-style = "#6e6a86"
+	line-numbers-left-style = "#26233a"
+	line-numbers-right-style = "#26233a"
+
+	file-style = "#04d1f9" bold
+	file-decoration-style = "#26233a" ul
+	hunk-header-style = "#a48cf2" bold
+	hunk-header-decoration-style = "#26233a" box
+
+	zero-style = syntax
+	whitespace-error-style = "#eb6f92" reverse

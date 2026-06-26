@@ -117,6 +117,99 @@ ln -s ~/.eldritch-rose/vscode ~/.vscode/extensions/eldritch-rose
 Reload the window, then `Ctrl+Shift+P` (`Cmd+Shift+P` on macOS) → "Preferences:
 Color Theme" → Eldritch Rose.
 
+### foot
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/srlightbody/eldritch-rose/main/foot/eldritch-rose.ini \
+	-o ~/.config/foot/eldritch-rose.ini
+```
+
+```ini
+# ~/.config/foot/foot.ini
+include=~/.config/foot/eldritch-rose.ini
+```
+
+### kitty
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/srlightbody/eldritch-rose/main/kitty/eldritch-rose.conf \
+	-o ~/.config/kitty/eldritch-rose.conf
+```
+
+```conf
+# ~/.config/kitty/kitty.conf
+include ./eldritch-rose.conf
+```
+
+### wezterm
+
+```sh
+mkdir -p ~/.config/wezterm/colors
+curl -fsSL https://raw.githubusercontent.com/srlightbody/eldritch-rose/main/wezterm/eldritch-rose.toml \
+	-o ~/.config/wezterm/colors/eldritch-rose.toml
+```
+
+```lua
+-- wezterm.lua
+config.color_scheme = "Eldritch Rose"
+```
+
+### bat
+
+```sh
+mkdir -p "$(bat --config-dir)/themes"
+curl -fsSL https://raw.githubusercontent.com/srlightbody/eldritch-rose/main/bat/eldritch-rose.tmTheme \
+	-o "$(bat --config-dir)/themes/eldritch-rose.tmTheme"
+bat cache --build
+```
+
+```sh
+# ~/.config/bat/config
+--theme="Eldritch Rose"
+```
+
+### delta
+
+Needs the bat theme above (delta uses bat's syntax themes).
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/srlightbody/eldritch-rose/main/delta/eldritch-rose.gitconfig \
+	-o ~/.config/delta/eldritch-rose.gitconfig
+```
+
+```ini
+# ~/.gitconfig
+[include]
+	path = ~/.config/delta/eldritch-rose.gitconfig
+```
+
+### lazygit
+
+Merge `lazygit/eldritch-rose.yml` into `~/.config/lazygit/config.yml` (it's the
+`gui.theme` block).
+
+### k9s
+
+```sh
+mkdir -p ~/.config/k9s/skins
+curl -fsSL https://raw.githubusercontent.com/srlightbody/eldritch-rose/main/k9s/eldritch-rose.yaml \
+	-o ~/.config/k9s/skins/eldritch-rose.yaml
+```
+
+```yaml
+# ~/.config/k9s/config.yaml
+k9s:
+  ui:
+    skin: eldritch-rose
+```
+
+### lsd
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/srlightbody/eldritch-rose/main/lsd/eldritch-rose.yaml \
+	-o ~/.config/lsd/colors.yaml
+```
+
 ## Notes
 
 - The neovim theme is standalone: it vendors and adapts rose-pine/neovim's
