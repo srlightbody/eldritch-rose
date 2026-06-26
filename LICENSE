@@ -1,6 +1,10 @@
 MIT License
 
 Copyright (c) 2026 Sam Lightbody
+Copyright (c) 2023 Rosé Pine (vendored neovim highlight engine)
+
+The neovim theme vendors and adapts the highlight engine from rose-pine/neovim
+(https://github.com/rose-pine/neovim), used under the MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -33,12 +33,40 @@ bright   8 #6e6a86  9 #f9515d 10 #69f8b3 11 #f1fc79 12 #7aa6ff 13 #fd92ce 14 #66
 
 ## Install
 
+Each app needs only its one file. The fastest path per app is below; no full
+clone required. Replace the raw URL base if you fork it.
+
+### Neovim
+
+Nothing to download by hand, the plugin manager fetches it. It's self
+contained (no dependencies). With lazy.nvim:
+
+```lua
+{
+	"srlightbody/eldritch-rose",
+	lazy = false,
+	priority = 1000,
+	config = function()
+		vim.cmd.colorscheme("eldritch-rose")
+	end,
+}
+```
+
+packer:
+
+```lua
+use({ "srlightbody/eldritch-rose" })
+-- then: vim.cmd.colorscheme("eldritch-rose")
+```
+
 ### Ghostty
 
-Copy or symlink the theme into ghostty's themes directory, then set it:
+Drop the theme file into ghostty's themes dir and point at it:
 
 ```sh
-ln -s ~/Projects/eldritch-rose/ghostty/eldritch-rose ~/.config/ghostty/themes/eldritch-rose
+mkdir -p ~/.config/ghostty/themes
+curl -fsSL https://raw.githubusercontent.com/srlightbody/eldritch-rose/main/ghostty/eldritch-rose \
+	-o ~/.config/ghostty/themes/eldritch-rose
 ```
 
 ```
@@ -46,39 +74,43 @@ ln -s ~/Projects/eldritch-rose/ghostty/eldritch-rose ~/.config/ghostty/themes/el
 theme = eldritch-rose
 ```
 
+Reload with `ctrl+shift+,` (or `cmd+shift+,` on macOS).
+
 ### Alacritty (0.13+)
+
+```sh
+mkdir -p ~/.config/alacritty/themes
+curl -fsSL https://raw.githubusercontent.com/srlightbody/eldritch-rose/main/alacritty/eldritch-rose.toml \
+	-o ~/.config/alacritty/themes/eldritch-rose.toml
+```
 
 ```toml
 # ~/.config/alacritty/alacritty.toml
 [general]
-import = ["~/Projects/eldritch-rose/alacritty/eldritch-rose.toml"]
-```
-
-### Neovim
-
-Builds on `rose-pine/neovim` (required dependency). With lazy.nvim:
-
-```lua
-{
-	"srlightbody/eldritch-rose",
-	dependencies = { "rose-pine/neovim" },
-	config = function()
-		vim.cmd("colorscheme eldritch-rose")
-	end,
-}
+import = ["~/.config/alacritty/themes/eldritch-rose.toml"]
 ```
 
 ### tmux
 
+```sh
+curl -fsSL https://raw.githubusercontent.com/srlightbody/eldritch-rose/main/tmux/eldritch-rose.conf \
+	-o ~/.config/tmux/eldritch-rose.conf
+```
+
 ```
 # ~/.config/tmux/tmux.conf
-source-file ~/Projects/eldritch-rose/tmux/eldritch-rose.conf
+source-file ~/.config/tmux/eldritch-rose.conf
 ```
+
+Reload with `tmux source-file ~/.config/tmux/tmux.conf`.
 
 ## Notes
 
+- The neovim theme is standalone: it vendors and adapts rose-pine/neovim's
+  highlight engine (MIT, see LICENSE) and drives it from the palette above, so
+  there's no runtime dependency and it's free to drift from rose pine over time.
 - Blue is an azure (`#4d8bff`) kept distinct from the eldritch cyan ramp
   (`#04d1f9`/`#66e4fd`); eldritch's own purple-blue is deliberately dropped. In
   neovim, keywords take the azure (pine) and types take the cyan (foam).
-- The neovim theme intentionally keeps rose pine's warm accents (red/gold/rose)
-  stock and only brightens the cool ones plus the cursor.
+- Warm accents (red/gold/rose) stay stock rose pine; only the cool ones plus the
+  cursor are eldritch.

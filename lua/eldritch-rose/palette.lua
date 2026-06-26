@@ -3,7 +3,7 @@ return {
 	base = "#191724",
 	surface = "#1f1d2e",
 	overlay = "#26233a",
-	nc = "#16141f",
+	_nc = "#16141f",
 
 	muted = "#6e6a86",
 	subtle = "#908caa",
@@ -20,4 +20,6 @@ return {
 	highlight_low = "#21202e",
 	highlight_med = "#403d52",
 	highlight_high = "#524f67",
+
+	none = "NONE",
 }
