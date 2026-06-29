@@ -185,8 +185,18 @@ curl -fsSL https://raw.githubusercontent.com/srlightbody/eldritch-rose/main/delt
 
 ### lazygit
 
-Merge `lazygit/eldritch-rose.yml` into `~/.config/lazygit/config.yml` (it's the
-`gui.theme` block).
+Keep the theme as a standalone file and layer it over your config (so updates
+never touch your personal settings):
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/srlightbody/eldritch-rose/main/lazygit/eldritch-rose.yml \
+	-o ~/.config/lazygit/eldritch-rose.yml
+```
+
+```sh
+# in your shell rc (rightmost file wins)
+export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,$HOME/.config/lazygit/eldritch-rose.yml"
+```
 
 ### k9s
 
