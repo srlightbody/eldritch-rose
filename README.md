@@ -165,7 +165,7 @@ bat cache --build
 
 ```sh
 # ~/.config/bat/config
---theme="Eldritch Rose"
+--theme="eldritch-rose"
 ```
 
 ### delta
