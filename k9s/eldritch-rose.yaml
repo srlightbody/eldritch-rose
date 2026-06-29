@@ -28,7 +28,7 @@ k9s:
   frame:
     border:
       fgColor: "#26233a"
-      focusColor: "#04d1f9"
+      focusColor: "#f48fc9"
     menu:
       fgColor: "#ebfafa"
       keyColor: "#a48cf2"
