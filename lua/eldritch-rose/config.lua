@@ -1,6 +1,6 @@
 ---@alias Variant "main" | "moon" | "dawn"
----@alias Palette { base: string, surface: string, overlay: string, muted: string, subtle: string, text: string, love: string, gold: string, rose: string, pine: string, foam: string, iris: string }
----@alias PaletteColor "base" | "surface" | "overlay" | "muted" | "subtle" | "text" | "love" | "gold" | "rose" | "pine" | "foam" | "iris" | "highlight_low" | "highlight_med" | "highlight_high"
+---@alias Palette { base: string, surface: string, overlay: string, ash: string, shroud: string, text: string, ichor: string, witchfire: string, siren: string, rift: string, aether: string, umbra: string, blight: string }
+---@alias PaletteColor "base" | "surface" | "overlay" | "ash" | "shroud" | "text" | "ichor" | "witchfire" | "siren" | "rift" | "aether" | "umbra" | "highlight_low" | "highlight_med" | "highlight_high"
 ---@alias Highlight { link: string, inherit: boolean } | { fg: string, bg: string, sp: string, bold: boolean, italic: boolean, undercurl: boolean, underline: boolean, underdouble: boolean, underdotted: boolean, underdashed: boolean, strikethrough: boolean, inherit: boolean }
 
 local config = {}
@@ -40,43 +40,43 @@ config.options = {
 
 	---@type table<string, string | PaletteColor>
 	groups = {
-		border = "muted",
-		link = "iris",
+		border = "ash",
+		link = "umbra",
 		panel = "surface",
 
-		error = "love",
-		hint = "iris",
-		info = "foam",
-		ok = "leaf",
-		warn = "gold",
-		note = "pine",
-		todo = "rose",
+		error = "ichor",
+		hint = "umbra",
+		info = "aether",
+		ok = "blight",
+		warn = "witchfire",
+		note = "rift",
+		todo = "siren",
 
-		git_add = "foam",
-		git_change = "rose",
-		git_delete = "love",
-		git_dirty = "rose",
-		git_ignore = "muted",
-		git_merge = "iris",
-		git_rename = "pine",
-		git_stage = "iris",
-		git_text = "rose",
-		git_untracked = "subtle",
+		git_add = "aether",
+		git_change = "siren",
+		git_delete = "ichor",
+		git_dirty = "siren",
+		git_ignore = "ash",
+		git_merge = "umbra",
+		git_rename = "rift",
+		git_stage = "umbra",
+		git_text = "siren",
+		git_untracked = "shroud",
 
 		---@type string | PaletteColor
-		h1 = "iris",
-		h2 = "foam",
-		h3 = "rose",
-		h4 = "gold",
-		h5 = "pine",
-		h6 = "leaf",
+		h1 = "umbra",
+		h2 = "aether",
+		h3 = "siren",
+		h4 = "witchfire",
+		h5 = "rift",
+		h6 = "blight",
 
 		---@deprecated Replaced by `options.highlight_groups["Normal"]`
 		-- background = "base",
 		---@deprecated Replaced by `options.highlight_groups["Comment"]`
-		-- comment = "subtle",
+		-- comment = "shroud",
 		---@deprecated Replaced by `options.highlight_groups["@punctuation"]`
-		-- punctuation = "muted",
+		-- punctuation = "ash",
 		---@deprecated Expects a table with values h1...h6
 		-- headings = "text",
 	},
@@ -105,7 +105,7 @@ config.options = {
 
 local function migrate(options)
 	if options.bold_vert_split then
-		local border = options.groups.border or "muted"
+		local border = options.groups.border or "ash"
 		options.highlight_groups["VertSplit"] = { fg = border, bg = border }
 		options.highlight_groups["WinSeparator"] = { fg = border, bg = border }
 	end
