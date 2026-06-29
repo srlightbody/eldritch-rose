@@ -29,7 +29,7 @@
 		"editorBracketMatch.border": "#00000000",
 
 		"editorGutter.addedBackground": "#04d1f9",
-		"editorGutter.modifiedBackground": "#ebbcba",
+		"editorGutter.modifiedBackground": "#f48fc9",
 		"editorGutter.deletedBackground": "#eb6f92",
 
 		"editorError.foreground": "#eb6f92",
@@ -116,7 +116,7 @@
 		"breadcrumb.focusForeground": "#ebfafa",
 
 		"gitDecoration.addedResourceForeground": "#37f499",
-		"gitDecoration.modifiedResourceForeground": "#ebbcba",
+		"gitDecoration.modifiedResourceForeground": "#f48fc9",
 		"gitDecoration.deletedResourceForeground": "#eb6f92",
 		"gitDecoration.untrackedResourceForeground": "#908caa",
 		"gitDecoration.ignoredResourceForeground": "#6e6a86",
@@ -154,7 +154,7 @@
 		},
 		{
 			"scope": ["constant.language", "constant.language.boolean"],
-			"settings": { "foreground": "#ebbcba" }
+			"settings": { "foreground": "#f48fc9" }
 		},
 		{
 			"scope": ["variable", "variable.other", "meta.definition.variable.name"],
@@ -182,7 +182,7 @@
 		},
 		{
 			"scope": ["entity.name.function", "support.function", "meta.function-call.generic"],
-			"settings": { "foreground": "#ebbcba" }
+			"settings": { "foreground": "#f48fc9" }
 		},
 		{
 			"scope": ["entity.name.type", "entity.name.class", "entity.name.namespace", "support.type", "support.class"],
@@ -222,7 +222,7 @@
 		},
 		{
 			"scope": ["markup.changed"],
-			"settings": { "foreground": "#ebbcba" }
+			"settings": { "foreground": "#f48fc9" }
 		},
 		{
 			"scope": ["markup.underline.link", "string.other.link"],
@@ -237,8 +237,8 @@
 		"parameter": "#a48cf2",
 		"property": "#04d1f9",
 		"variable": "#ebfafa",
-		"function": "#ebbcba",
-		"method": "#ebbcba",
+		"function": "#f48fc9",
+		"method": "#f48fc9",
 		"class": "#04d1f9",
 		"type": "#04d1f9",
 		"enum": "#04d1f9",
