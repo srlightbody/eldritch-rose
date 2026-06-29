@@ -11,7 +11,7 @@ return {
 
 	love = "#eb6f92",
 	gold = "#f6c177",
-	rose = "#ebbcba",
+	rose = "#f48fc9",
 	pine = "#4d8bff",
 	foam = "#04d1f9",
 	iris = "#a48cf2",

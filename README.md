@@ -16,7 +16,7 @@ and neon-green cursor. Dark, low-contrast base; the blues, cyans, and purples po
 | text (fg)       | `#ebfafa` | eldritch   |
 | love (red)      | `#eb6f92` | rose pine  |
 | gold (yellow)   | `#f6c177` | rose pine  |
-| rose            | `#ebbcba` | rose pine  |
+| rose            | `#f48fc9` | eldritch   |
 | pine (blue)     | `#4d8bff` | azure      |
 | foam (cyan)     | `#04d1f9` | eldritch   |
 | iris (purple)   | `#a48cf2` | eldritch   |
@@ -228,5 +228,5 @@ cp -r "noctalia/colorschemes/Eldritch Rose" ~/.config/noctalia/colorschemes/
 - Blue is an azure (`#4d8bff`) kept distinct from the eldritch cyan ramp
   (`#04d1f9`/`#66e4fd`); eldritch's own purple-blue is deliberately dropped. In
   neovim, keywords take the azure (pine) and types take the cyan (foam).
-- Warm accents (red/gold/rose) stay stock rose pine; only the cool ones plus the
-  cursor are eldritch.
+- Warm accents (red/gold) stay stock rose pine; rose is pushed to an electric
+  fuchsia, and the cool ones plus the cursor are eldritch.
