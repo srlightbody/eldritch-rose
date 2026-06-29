@@ -27,7 +27,7 @@ and neon-green cursor. Dark, low-contrast base; the blues, cyans, and purples po
 ### 16-color ANSI
 
 ```
-normal   0 #26233a  1 #eb6f92  2 #37f499  3 #f6c177  4 #4d8bff  5 #a48cf2  6 #04d1f9  7 #e0def4
+normal   0 #26233a  1 #eb6f92  2 #37f499  3 #e8be22  4 #4d8bff  5 #a48cf2  6 #04d1f9  7 #e0def4
 bright   8 #6e6a86  9 #f9515d 10 #69f8b3 11 #f1fc79 12 #7aa6ff 13 #fd92ce 14 #66e4fd 15 #ebfafa
 ```
 
