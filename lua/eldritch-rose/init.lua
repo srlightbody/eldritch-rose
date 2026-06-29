@@ -47,7 +47,7 @@ local function set_highlights()
 		["@text.danger"] = { fg = groups.error },
 		["@text.diff.add"] = { fg = groups.git_add, bg = groups.git_add, blend = 20 },
 		["@text.diff.delete"] = { fg = groups.git_delete, bg = groups.git_delete, blend = 20 },
-		["@text.emphasis"] = { italic = styles.italic },
+		["@text.emphasis"] = { italic = true },
 		["@text.environment"] = { link = "Macro" },
 		["@text.environment.name"] = { link = "Type" },
 		["@text.math"] = { link = "Special" },
@@ -239,7 +239,7 @@ local function set_highlights()
 		htmlH3 = { link = "markdownH3" },
 		htmlH4 = { link = "markdownH4" },
 		htmlH5 = { link = "markdownH5" },
-		htmlItalic = { italic = styles.italic },
+		htmlItalic = { italic = true },
 		htmlLink = { link = "markdownUrl" },
 		htmlTag = { fg = palette.subtle },
 		htmlTagN = { fg = palette.text },
@@ -361,7 +361,7 @@ local function set_highlights()
 
 		--- Markup
 		["@markup.strong"] = { bold = styles.bold },
-		["@markup.italic"] = { italic = styles.italic },
+		["@markup.italic"] = { italic = true },
 		["@markup.strikethrough"] = { strikethrough = true },
 		["@markup.underline"] = { underline = true },
 
