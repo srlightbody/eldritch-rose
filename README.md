@@ -11,16 +11,16 @@ and neon-green cursor. Dark, low-contrast base; the blues, cyans, and purples po
 | base (bg)       | `#0e0218` | violet     |
 | surface         | `#17112b` | violet     |
 | overlay         | `#241a38` | violet     |
-| muted           | `#6e6a86` | rose pine  |
-| subtle          | `#908caa` | rose pine  |
+| ash             | `#6e6a86` | rose pine  |
+| shroud          | `#908caa` | rose pine  |
 | text (fg)       | `#ebfafa` | eldritch   |
-| love (red)      | `#eb6f92` | rose pine  |
-| gold (yellow)   | `#f6c177` | rose pine  |
-| rose            | `#f48fc9` | eldritch   |
-| pine (blue)     | `#4d8bff` | azure      |
-| foam (cyan)     | `#04d1f9` | eldritch   |
-| iris (purple)   | `#a48cf2` | eldritch   |
-| leaf (green)    | `#37f499` | eldritch   |
+| ichor (red)     | `#eb6f92` | rose pine  |
+| witchfire (yellow) | `#e8be22` | eldritch |
+| siren           | `#f48fc9` | eldritch   |
+| rift (blue)     | `#4d8bff` | azure      |
+| aether (cyan)   | `#04d1f9` | eldritch   |
+| umbra (purple)  | `#a48cf2` | eldritch   |
+| blight (green)  | `#37f499` | eldritch   |
 | cursor          | `#37f499` | eldritch   |
 | selection       | `#403d52` | rose pine  |
 
@@ -227,6 +227,8 @@ cp -r "noctalia/colorschemes/Eldritch Rose" ~/.config/noctalia/colorschemes/
   there's no runtime dependency and it's free to drift from rose pine over time.
 - Blue is an azure (`#4d8bff`) kept distinct from the eldritch cyan ramp
   (`#04d1f9`/`#66e4fd`); eldritch's own purple-blue is deliberately dropped. In
-  neovim, keywords take the azure (pine) and types take the cyan (foam).
-- Warm accents (red/gold) stay stock rose pine; rose is pushed to an electric
-  fuchsia, and the cool ones plus the cursor are eldritch.
+  neovim, keywords take the azure (rift) and types take the cyan (aether).
+- Red (ichor) stays stock rose pine; yellow (witchfire) is pushed to a deep
+  sulphur and the fuchsia (siren) is custom; the cool accents plus the cursor
+  are eldritch. Palette names are eldritch renames of rose pine's love/gold/
+  rose/pine/foam/iris/leaf.
