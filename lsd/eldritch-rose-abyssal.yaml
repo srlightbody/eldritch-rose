@@ -1,0 +1,41 @@
+# Eldritch Rose Abyssal - lsd
+# place at ~/.config/lsd/colors.yaml (lsd reads it directly), or point lsd at it.
+
+user: "#e8be22"
+group: "#6e6a86"
+permission:
+  read: "#37f499"
+  write: "#e8be22"
+  exec: "#eb6f92"
+  exec-sticky: "#a48cf2"
+  no-access: "#6e6a86"
+  octal: "#04d1f9"
+  acl: "#04d1f9"
+  context: "#a48cf2"
+date:
+  hour-old: "#37f499"
+  day-old: "#04d1f9"
+  older: "#6e6a86"
+size:
+  none: "#6e6a86"
+  small: "#37f499"
+  medium: "#e8be22"
+  large: "#eb6f92"
+inode:
+  valid: "#a48cf2"
+  invalid: "#6e6a86"
+links:
+  valid: "#a48cf2"
+  invalid: "#6e6a86"
+tree-edge: "#222a3a"
+git-status:
+  default: "#ebfafa"
+  unmodified: "#6e6a86"
+  ignored: "#6e6a86"
+  new-in-index: "#37f499"
+  new-in-workdir: "#37f499"
+  typechange: "#e8be22"
+  deleted: "#eb6f92"
+  modified: "#e8be22"
+  renamed: "#04d1f9"
+  conflicted: "#eb6f92"

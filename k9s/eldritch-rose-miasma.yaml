@@ -1,0 +1,86 @@
+# Eldritch Rose Miasma - k9s skin
+# place in ~/.config/k9s/skins/eldritch-rose.yaml, then set in config.yaml:
+#   k9s:
+#     ui:
+#       skin: eldritch-rose
+
+k9s:
+  body:
+    fgColor: "#ebfafa"
+    bgColor: "#0a140e"
+    logoColor: "#04d1f9"
+  prompt:
+    fgColor: "#ebfafa"
+    bgColor: "#0a140e"
+    suggestColor: "#a48cf2"
+  info:
+    fgColor: "#04d1f9"
+    sectionColor: "#ebfafa"
+  dialog:
+    fgColor: "#ebfafa"
+    bgColor: "#0a140e"
+    buttonFgColor: "#0a140e"
+    buttonBgColor: "#04d1f9"
+    buttonFocusFgColor: "#0a140e"
+    buttonFocusBgColor: "#37f499"
+    labelFgColor: "#e8be22"
+    fieldFgColor: "#ebfafa"
+  frame:
+    border:
+      fgColor: "#222e28"
+      focusColor: "#f48fc9"
+    menu:
+      fgColor: "#ebfafa"
+      keyColor: "#a48cf2"
+      numKeyColor: "#a48cf2"
+    crumbs:
+      fgColor: "#0a140e"
+      bgColor: "#384e42"
+      activeColor: "#04d1f9"
+    status:
+      newColor: "#04d1f9"
+      modifyColor: "#4d8bff"
+      addColor: "#37f499"
+      errorColor: "#eb6f92"
+      highlightColor: "#e8be22"
+      killColor: "#a48cf2"
+      completedColor: "#6e6a86"
+    title:
+      fgColor: "#ebfafa"
+      bgColor: "#0a140e"
+      highlightColor: "#e8be22"
+      counterColor: "#a48cf2"
+      filterColor: "#04d1f9"
+  views:
+    charts:
+      bgColor: "#0a140e"
+      defaultDialColors:
+        - "#04d1f9"
+        - "#eb6f92"
+      defaultChartColors:
+        - "#04d1f9"
+        - "#eb6f92"
+    table:
+      fgColor: "#ebfafa"
+      bgColor: "#0a140e"
+      cursorFgColor: "#0a140e"
+      cursorBgColor: "#222e28"
+      header:
+        fgColor: "#ebfafa"
+        bgColor: "#0a140e"
+        sorterColor: "#37f499"
+    xray:
+      fgColor: "#ebfafa"
+      bgColor: "#0a140e"
+      cursorColor: "#222e28"
+      graphicColor: "#04d1f9"
+    yaml:
+      keyColor: "#4d8bff"
+      colonColor: "#908caa"
+      valueColor: "#ebfafa"
+    logs:
+      fgColor: "#ebfafa"
+      bgColor: "#0a140e"
+      indicator:
+        fgColor: "#04d1f9"
+        bgColor: "#0a140e"
