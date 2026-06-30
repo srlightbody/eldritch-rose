@@ -6,6 +6,8 @@ and neon-green cursor. Dark, low-contrast base; the blues, cyans, and purples po
 
 ## Palette
 
+![Eldritch Rose palette](palette.svg)
+
 | Role            | Hex       | Source     |
 |-----------------|-----------|------------|
 | base (bg)       | `#0e0218` | violet     |
@@ -116,6 +118,17 @@ ln -s ~/.eldritch-rose/vscode ~/.vscode/extensions/eldritch-rose
 
 Reload the window, then `Ctrl+Shift+P` (`Cmd+Shift+P` on macOS) → "Preferences:
 Color Theme" → Eldritch Rose.
+
+### Brave / Chromium
+
+A theme extension; needs the whole `brave/` folder, so clone and load it unpacked:
+
+```sh
+git clone https://github.com/srlightbody/eldritch-rose ~/.eldritch-rose
+```
+
+Open `brave://extensions` (or `chrome://extensions`), enable Developer mode, click
+"Load unpacked", and select `~/.eldritch-rose/brave`.
 
 ### foot
 
