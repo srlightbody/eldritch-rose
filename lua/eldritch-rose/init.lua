@@ -3,7 +3,7 @@ local config = require("eldritch-rose.config")
 
 local function set_highlights()
 	local utilities = require("eldritch-rose.utilities")
-	local palette = require("eldritch-rose.palette")
+	local palette = require("eldritch-rose.palette")()
 	local styles = config.options.styles
 
 	local groups = {}

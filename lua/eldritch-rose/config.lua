@@ -1,4 +1,4 @@
----@alias Variant "main" | "moon" | "dawn"
+---@alias Variant "drowned" | "void" | "abyssal" | "miasma"
 ---@alias Palette { base: string, surface: string, overlay: string, ash: string, shroud: string, text: string, ichor: string, witchfire: string, siren: string, rift: string, aether: string, umbra: string, blight: string }
 ---@alias PaletteColor "base" | "surface" | "overlay" | "ash" | "shroud" | "text" | "ichor" | "witchfire" | "siren" | "rift" | "aether" | "umbra" | "highlight_low" | "highlight_med" | "highlight_high"
 ---@alias Highlight { link: string, inherit: boolean } | { fg: string, bg: string, sp: string, bold: boolean, italic: boolean, undercurl: boolean, underline: boolean, underdouble: boolean, underdotted: boolean, underdashed: boolean, strikethrough: boolean, inherit: boolean }
@@ -7,14 +7,14 @@ local config = {}
 
 ---@class Options
 config.options = {
-	---Set the desired variant: "auto" will follow the vim background,
-	---defaulting to `dark_variant` or "main" for dark and "dawn" for light.
+	---Set the desired variant: "drowned" (teal, default), "void" (violet),
+	---"abyssal" (blue), or "miasma" (green). "auto" resolves to `dark_variant`.
 	---@type "auto" | Variant
 	variant = "auto",
 
-	---Set the desired dark variant when `options.variant` is set to "auto".
+	---Variant used when `options.variant` is "auto".
 	---@type Variant
-	dark_variant = "main",
+	dark_variant = "drowned",
 
 	---Differentiate between active and inactive windows and panels.
 	dim_inactive_windows = false,
