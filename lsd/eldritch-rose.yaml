@@ -27,7 +27,7 @@ inode:
 links:
   valid: "#a48cf2"
   invalid: "#6e6a86"
-tree-edge: "#26233a"
+tree-edge: "#202e34"
 git-status:
   default: "#ebfafa"
   unmodified: "#6e6a86"
