@@ -1,18 +1,24 @@
 # Eldritch Rose
 
-A mashup theme: [Rose Pine](https://rosepinetheme.com/)'s muted backgrounds and
-structure with [Eldritch](https://github.com/eldritch-theme)'s vivid cool accents
-and neon-green cursor. Dark, low-contrast base; the blues, cyans, and purples pop.
+A mashup theme: [Rose Pine](https://rosepinetheme.com/)'s structure with
+[Eldritch](https://github.com/eldritch-theme)'s vivid cool accents and a
+neon-green cursor, set over a deep eldritch base. Dark and low-contrast; the
+cyans, blues, greens, and purples glow against the dark. Ships in four base
+variants: **drowned** (teal, default), **void** (violet), **abyssal** (blue),
+**miasma** (green).
 
 ## Palette
 
 ![Eldritch Rose palette](palette.svg)
 
+The base ramp shown is the default **drowned** variant; only `base`/`surface`/
+`overlay`/grays change per variant, the accents below are shared by all four.
+
 | Role            | Hex       | Source     |
 |-----------------|-----------|------------|
-| base (bg)       | `#0e0218` | violet     |
-| surface         | `#17112b` | violet     |
-| overlay         | `#241a38` | violet     |
+| base (bg)       | `#08161a` | drowned    |
+| surface         | `#0f2329` | drowned    |
+| overlay         | `#163139` | drowned    |
 | ash             | `#6e6a86` | rose pine  |
 | shroud          | `#908caa` | rose pine  |
 | text (fg)       | `#ebfafa` | eldritch   |
@@ -24,14 +30,43 @@ and neon-green cursor. Dark, low-contrast base; the blues, cyans, and purples po
 | umbra (purple)  | `#a48cf2` | eldritch   |
 | blight (green)  | `#37f499` | eldritch   |
 | cursor          | `#37f499` | eldritch   |
-| selection       | `#403d52` | rose pine  |
+| selection       | `#3e4750` | drowned    |
 
 ### 16-color ANSI
 
 ```
-normal   0 #26233a  1 #eb6f92  2 #37f499  3 #e8be22  4 #4d8bff  5 #a48cf2  6 #04d1f9  7 #e0def4
+normal   0 #202e34  1 #eb6f92  2 #37f499  3 #e8be22  4 #4d8bff  5 #a48cf2  6 #04d1f9  7 #e0def4
 bright   8 #6e6a86  9 #f9515d 10 #69f8b3 11 #f1fc79 12 #7aa6ff 13 #fd92ce 14 #66e4fd 15 #ebfafa
 ```
+
+## Variants
+
+Four base variants. The accents are identical across all of them; only the
+background ramp changes. **drowned** is the default.
+
+| Variant | base | feel |
+|---------|-----------|-----------------------|
+| drowned *(default)* | `#08161a` | teal deep, the sunken |
+| void    | `#0e0218` | near-black violet |
+| abyssal | `#0a1020` | deep cosmic blue |
+| miasma  | `#0a140e` | toxic green |
+
+![drowned](assets/preview-drowned.png)
+![void](assets/preview-void.png)
+![abyssal](assets/preview-abyssal.png)
+![miasma](assets/preview-miasma.png)
+
+**Neovim** picks the variant at runtime:
+
+```lua
+require("eldritch-rose").setup({ variant = "void" }) -- or abyssal, miasma
+vim.cmd.colorscheme("eldritch-rose")
+```
+
+**Everything else** ships a file per variant next to the default (which is
+drowned), e.g. `ghostty/eldritch-rose-void`, `bat/eldritch-rose-miasma.tmTheme`,
+`noctalia/colorschemes/Eldritch Rose Abyssal`. Point your app at the variant
+file instead of the default. (VS Code ships drowned only for now.)
 
 ## Install
 
