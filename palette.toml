@@ -1,0 +1,104 @@
+# Eldritch Rose — single source of truth for all app themes.
+# Edit here, then run `python build/build.py` to regenerate every app file.
+# Shared colors are identical across variants; only [variants.*] ramps change.
+
+# order controls emission order in palette.lua
+order = ["drowned", "void", "abyssal", "miasma", "lifted"]
+
+[accents]
+ash       = "#6e6a86"
+shroud    = "#908caa"
+text      = "#ebfafa"
+ichor     = "#eb6f92"
+witchfire = "#e8be22"
+siren     = "#f48fc9"
+rift      = "#4d8bff"
+aether    = "#04d1f9"
+umbra     = "#a48cf2"
+blight    = "#37f499"
+cursor    = "#37f499"
+
+# bright ANSI (8..15); 8 = ash, 15 = text, plus normal-7 white
+[bright]
+white7  = "#e0def4"
+red     = "#f9515d"
+green   = "#69f8b3"
+yellow  = "#f1fc79"
+blue    = "#7aa6ff"
+magenta = "#fd92ce"
+cyan    = "#66e4fd"
+
+# delta diff backgrounds — fixed across variants
+[delta]
+minus      = "#3a1f2a"
+minus_emph = "#5a2535"
+plus       = "#16302a"
+plus_emph  = "#1d4a3e"
+
+[variants.drowned]
+suffix       = ""
+comment      = ["drowned: teal deep (default) — R'lyeh, the sunken"]
+base         = "#08161a"
+surface      = "#0f2329"
+overlay      = "#163139"
+_nc          = "#050f12"
+hl_low       = "#20262a"
+hl_med       = "#3e4750"
+hl_high      = "#505a64"
+inactive_tab = "#0d1f25"
+border       = "#202e34"
+
+[variants.void]
+suffix       = "Void"
+comment      = ["void: near-black violet (the original eldritch base)"]
+base         = "#0e0218"
+surface      = "#17112b"
+overlay      = "#241a38"
+_nc          = "#0a0214"
+hl_low       = "#21202e"
+hl_med       = "#403d52"
+hl_high      = "#524f67"
+inactive_tab = "#1f1d2e"
+border       = "#26233a"
+
+[variants.abyssal]
+suffix       = "Abyssal"
+comment      = ["abyssal: deep cosmic blue"]
+base         = "#0a1020"
+surface      = "#141b30"
+overlay      = "#1f2942"
+_nc          = "#070b18"
+hl_low       = "#1f2330"
+hl_med       = "#3a4358"
+hl_high      = "#4c576e"
+inactive_tab = "#11192c"
+border       = "#222a3a"
+
+[variants.miasma]
+suffix       = "Miasma"
+comment      = ["miasma: toxic deep green — for the dramatic"]
+base         = "#0a140e"
+surface      = "#11201a"
+overlay      = "#1a2e25"
+_nc          = "#070f0a"
+hl_low       = "#1f2922"
+hl_med       = "#384e42"
+hl_high      = "#4a6055"
+inactive_tab = "#0f1d16"
+border       = "#222e28"
+
+[variants.lifted]
+suffix       = "Lifted"
+comment      = [
+  "lifted: drowned teal with the floor raised ~5 L* and steps widened, so the",
+  "depth survives on low-contrast LCD panels (laptops) instead of crushing to mud.",
+]
+base         = "#0c2126"
+surface      = "#132d35"
+overlay      = "#1a3a44"
+_nc          = "#08171c"
+hl_low       = "#262d31"
+hl_med       = "#3e4750"
+hl_high      = "#505a65"
+inactive_tab = "#11272f"
+border       = "#26363d"

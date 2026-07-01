@@ -5,7 +5,8 @@ A mashup theme: [Rose Pine](https://rosepinetheme.com/)'s structure with
 neon-green cursor, set over a deep eldritch base. Dark and low-contrast; the
 cyans, blues, greens, and purples glow against the dark. Ships in four base
 variants: **drowned** (teal, default), **void** (violet), **abyssal** (blue),
-**miasma** (green).
+**miasma** (green), plus **lifted** (drowned with a raised floor for
+low-contrast LCD/laptop panels).
 
 ## Palette
 
@@ -41,8 +42,11 @@ bright   8 #6e6a86  9 #f9515d 10 #69f8b3 11 #f1fc79 12 #7aa6ff 13 #fd92ce 14 #66
 
 ## Variants
 
-Four base variants. The accents are identical across all of them; only the
-background ramp changes. **drowned** is the default.
+Variants. The accents are identical across all of them; only the background
+ramp changes. **drowned** is the default. The first four are aesthetic; **lifted**
+is a utility variant: drowned's teal with the floor raised ~5 L* and the steps
+widened, so the layered depth survives on low-contrast LCD/laptop panels instead
+of crushing to flat grey. Prefer it on non-OLED displays.
 
 | Variant | base | feel |
 |---------|-----------|-----------------------|
@@ -50,6 +54,7 @@ background ramp changes. **drowned** is the default.
 | void    | `#0e0218` | near-black violet |
 | abyssal | `#0a1020` | deep cosmic blue |
 | miasma  | `#0a140e` | toxic green |
+| lifted  | `#0c2126` | drowned, tuned for LCD |
 
 ![drowned](assets/preview-drowned.png)
 ![void](assets/preview-void.png)
@@ -67,6 +72,25 @@ vim.cmd.colorscheme("eldritch-rose")
 drowned), e.g. `ghostty/eldritch-rose-void`, `bat/eldritch-rose-miasma.tmTheme`,
 `noctalia/colorschemes/Eldritch Rose Abyssal`. Point your app at the variant
 file instead of the default. (VS Code ships drowned only for now.)
+
+## Building
+
+All app files are generated from a single source, `palette.toml`, so a color
+change is made once and propagated everywhere. Don't hand-edit the per-app
+theme files; edit `palette.toml` (or `build/templates/*.tmpl` for structure)
+and regenerate:
+
+```bash
+python build/build.py            # regenerate every app file + palette.lua
+python build/build.py check      # fail if any file is out of sync (CI/pre-commit)
+python build/build.py templatize # rebuild templates from the drowned files
+```
+
+Only the nine per-variant roles (`base`/`surface`/`overlay`/`_nc`, the three
+highlight grays, plus `inactive_tab`/`border`) and the display name differ
+between variants; accents, bright ANSI, and delta's diff tints are shared.
+Adding a variant is a new `[variants.*]` block in `palette.toml` followed by a
+build.
 
 ## Install
 

@@ -43,6 +43,12 @@ local ramps = {
 		base = "#0a140e", surface = "#11201a", overlay = "#1a2e25", _nc = "#070f0a",
 		highlight_low = "#1f2922", highlight_med = "#384e42", highlight_high = "#4a6055",
 	},
+	-- lifted: drowned teal with the floor raised ~5 L* and steps widened, so the
+	-- depth survives on low-contrast LCD panels (laptops) instead of crushing to mud.
+	lifted = {
+		base = "#0c2126", surface = "#132d35", overlay = "#1a3a44", _nc = "#08171c",
+		highlight_low = "#262d31", highlight_med = "#3e4750", highlight_high = "#505a65",
+	},
 }
 
 local built = {}
